@@ -8,7 +8,7 @@ char * mystrcat(char *dest, char *souce);
 int mystrcmp(char *s1, char *s2);
 char * mystrchr(char *s, char c);
 
-//Returns the length of a null terminated string
+//returns the length of a null terminated string
 int mystrlen(char *str)
 {
   int length = 0;
