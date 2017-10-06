@@ -4,7 +4,7 @@
 //function headers
 int mystrlen( char *str);
 char * mystrncpy(char *dest, char *source, int size);
-char * mystrcat(char *dest, char *souce);
+char * mystrcat(char *destination, char *src){;
 int mystrcmp(char *s1, char *s2);
 char * mystrchr(char *s, char c);
 
@@ -43,6 +43,34 @@ char * mystrchr( char *str, char c)
       str ++;
     }
   return NULL;
+}
+
+//compares the two strings
+int mystrcmp( char *s1, char *s2 ){
+  int i;
+  for(i=0; s1[i] && s2[i]; i++){
+    if (s1[i] > s2[i]){
+      return 1;
+    }
+    else if (s1[i] < s2[i]){
+      return -1;
+    }
+  }
+  return 0;
+}
+
+//concatenates the strings
+char * mystrcat(char *destination, char *src){
+  int len = strlen(destination);
+  int i =0;
+    while (src[i]){
+      printf("%d",len + i);
+      destination[len] = src[i];
+      i++;
+      len++;
+    }
+  destination[len] = 0;
+  return destination;
 }
 
 
