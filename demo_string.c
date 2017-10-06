@@ -5,9 +5,9 @@
 int main()
 {
   char * str1 = "hello";
-  char * str2;
-  printf("part 1\n");
-  mystrncpy(str2, str1, 4);
+  char str2[10];
+  printf("%s\n", mystrncpy(str2, str1, 4));
+  
 }
 
 
