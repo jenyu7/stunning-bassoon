@@ -4,7 +4,7 @@
 //function headers
 int mystrlen( char *str);
 char * mystrncpy(char *dest, char *source, int size);
-char * mystrcat(char *destination, char *src){;
+char * mystrcat(char *destination, char *src);
 int mystrcmp(char *s1, char *s2);
 char * mystrchr(char *s, char c);
 
